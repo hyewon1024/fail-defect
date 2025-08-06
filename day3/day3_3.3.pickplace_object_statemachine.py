@@ -604,7 +604,7 @@ def main():
     # log_dir = f"simulation_logs_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
     # os.makedirs(log_dir, exist_ok=True)    
     max_steps_per_traj=700
-    max_trajectories=7
+    max_trajectories=102
     total_traj = 0
     # 시뮬레이션 루프
     while simulation_app.is_running() and total_traj < max_trajectories:
@@ -946,6 +946,7 @@ def main():
     # 환경 종료 및 시뮬레이션 종료
     env.close()
     simulation_app.close()       
+
 # 메인 함수 실행
 if __name__ == "__main__":
     main()
